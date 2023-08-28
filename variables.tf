@@ -1,3 +1,4 @@
+// List ogf connectors to be deployed
 variable "connectors" {
     type = list(object({
         name              = string
@@ -9,23 +10,18 @@ variable "connectors" {
     }))
 }
  
-
+// Confluent Cloud environment
 variable "environment" {
    type = string
 }
-
+// Confluent Cloud Kafka Cluster
 variable "cluster" {
   type = string
 }
 
+// Service Account
 variable "service_account" {
   type = string
 }
 
-variable "confluent_cloud_api_key" {
-    type = string
-}
-
-variable "confluent_cloud_api_secret" {
-    type = string
-}
+ 

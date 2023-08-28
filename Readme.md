@@ -37,12 +37,10 @@ It allows you to create and manage Confluent Cloud Connectors.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_cluster"></a> [cluster](#input\_cluster) | n/a | `string` | n/a | yes |
-| <a name="input_confluent_cloud_api_key"></a> [confluent\_cloud\_api\_key](#input\_confluent\_cloud\_api\_key) | n/a | `string` | n/a | yes |
-| <a name="input_confluent_cloud_api_secret"></a> [confluent\_cloud\_api\_secret](#input\_confluent\_cloud\_api\_secret) | n/a | `string` | n/a | yes |
-| <a name="input_connectors"></a> [connectors](#input\_connectors) | n/a | <pre>list(object({<br>        name              = string<br>        class             = string<br>        topic             = string<br>        tasks             = number <br>        config_sensitive  = optional(map(string))<br>        config_nonsensitive = map(string)<br>    }))</pre> | n/a | yes |
-| <a name="input_environment"></a> [environment](#input\_environment) | n/a | `string` | n/a | yes |
-| <a name="input_service_account"></a> [service\_account](#input\_service\_account) | n/a | `string` | n/a | yes |
+| <a name="input_cluster"></a> [cluster](#input\_cluster) | Confluent Cloud Kafka Cluster | `string` | n/a | yes |
+| <a name="input_connectors"></a> [connectors](#input\_connectors) | List ogf connectors to be deployed | <pre>list(object({<br>        name              = string<br>        class             = string<br>        topic             = string<br>        tasks             = number <br>        config_sensitive  = optional(map(string))<br>        config_nonsensitive = map(string)<br>    }))</pre> | n/a | yes |
+| <a name="input_environment"></a> [environment](#input\_environment) | Confluent Cloud environment | `string` | n/a | yes |
+| <a name="input_service_account"></a> [service\_account](#input\_service\_account) | Service Account | `string` | n/a | yes |
 
 ## Outputs
 

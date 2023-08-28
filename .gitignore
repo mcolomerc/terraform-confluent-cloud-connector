@@ -1,0 +1,15 @@
+*.log
+
+*.lock.hcl
+
+*.lock.json
+
+*tfstate*
+
+.terraform
+terraform.tfstate
+terraform.tfstate.backup
+ 
+.env
+.pem
+*log*
